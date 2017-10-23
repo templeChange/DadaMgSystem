@@ -10,19 +10,22 @@ Target Server Type    : MYSQL
 Target Server Version : 50718
 File Encoding         : 65001
 
-Date: 2017-10-24 00:02:46
+Date: 2017-10-24 00:02:59
 */
 
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
--- Table structure for permission
+-- Table structure for trainingcamp
 -- ----------------------------
-DROP TABLE IF EXISTS `permission`;
-CREATE TABLE `permission` (
+DROP TABLE IF EXISTS `trainingcamp`;
+CREATE TABLE `trainingcamp` (
   `id` int(11) NOT NULL,
-  `name` varchar(255) DEFAULT NULL,
-  `info` varchar(255) DEFAULT NULL,
+  `classroomNumber` int(11) DEFAULT NULL,
+  `teacherName` varchar(255) DEFAULT NULL,
+  `teacherPhone` varchar(255) DEFAULT NULL,
+  `productLine` varchar(255) DEFAULT NULL,
+  `cadetNumber` int(11) DEFAULT NULL,
   `createdTime` datetime DEFAULT NULL,
   `modifiyTime` datetime DEFAULT NULL,
   `createdUser` varchar(255) DEFAULT NULL,
@@ -31,5 +34,5 @@ CREATE TABLE `permission` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of permission
+-- Records of trainingcamp
 -- ----------------------------
