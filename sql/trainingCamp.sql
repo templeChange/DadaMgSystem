@@ -23,7 +23,6 @@ CREATE TABLE `trainingcamp` (
   `id` int(11) NOT NULL,
   `classroomNumber` int(11) DEFAULT NULL,
   `teacherName` varchar(255) DEFAULT NULL,
-  `teacherPhone` varchar(255) DEFAULT NULL,
   `productLine` varchar(255) DEFAULT NULL,
   `cadetNumber` int(11) DEFAULT NULL,
   `createdTime` datetime DEFAULT NULL,
